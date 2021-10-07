@@ -1,0 +1,254 @@
+* {
+    margin:0;
+    padding:0;
+ }
+
+ body{
+   font-family: 'Cormorant Infant', serif;
+ }
+
+
+
+
+ /*Меню*/
+
+ .table{
+    background-image: url(..//img/menu.jpg);
+    height:100vh;
+    font-size: 100%;
+ }
+ table {
+    width:100%; 
+    border-collapse: collapse;
+    color: #686461;}
+  caption {
+    padding: 3%;
+    color: white;
+    background: #a9d8cb;
+    font-size: 100%;
+    text-align: left;
+    font-weight: bold;
+  }
+  th {
+    border-bottom: 3px solid #B9B29F;
+    padding: 3%;
+    text-align: left;
+  }
+  td {
+    padding: 3%;
+  }
+  tr:nth-child(odd) {
+    background: white;
+  }
+  tr:nth-child(even) {
+    background: #E8E6D1;
+  }
+
+
+
+
+  /*Топ*/
+  .top{ 
+      font-size: 50px;
+      background-image: url(..//img/intro.png);
+      height:100vh;
+      display:flex;
+      justify-content: center;
+  }
+
+
+
+ /*Футер*/
+
+ .footer_column{
+     height:100vh;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-image: url(..//img/footer.jpg);
+ }
+ .footer{
+    text-shadow:#E8E6D1 2px 2px 2px; 
+     color:#000000;
+     font-size:20px; 
+ }
+ .contacts{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+ }
+ .contacts_a{
+    text-decoration: none;
+    color:#4a4e4d;
+    font-size:20px;
+    padding:1% 2% 1% 2%;
+ }
+
+ /*Content*/
+
+.content{
+   background-color:rgba(207, 156, 132, 0.336);
+   width:100%;
+}
+
+/* Section */
+
+.section {
+    padding:2% 0;
+}
+.section_header{
+    margin: 0 auto 40px;
+    width:100%;
+    max-width: 950px;
+    text-align: center;
+}
+.section_title{
+    font-size: 50px;
+    font-weight: 700;
+}
+.section_title::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:2px;
+    margin:30px auto;
+    background-color:rgb(51, 51, 51);
+}
+.section_suptitle{
+    font-weight:700;
+}
+.section_text{
+    color:#838383;
+}
+
+
+/*Music*/
+.music1_row{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(158, 145, 145, 0.507);
+    padding: 50px;
+}
+
+.music12_row{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b44e4e83;
+    padding: 50px;
+}
+
+.music_text{
+    color:aliceblue;
+}
+
+.music2_row{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b44e4e65;
+    padding: 20px;
+}
+
+.music_text{
+    color:aliceblue;
+    text-align: center;
+    padding-bottom:20px;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+
+.post-item {
+    flex-basis: 33.3333%;
+    padding: 10px;
+    margin:5%; 
+ }
+ .post-item-wrap {
+    background: #F7F7F2;
+    position: relative;
+ }
+ .post-item-wrap:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #008cff;
+    transform: rotate(1deg);
+    transform-origin: left bottom;
+    transition: .3s ease-in-out;
+ }
+ .post-item-wrap:hover:after {
+    top: 5px;
+    left: 5px;
+    transform: rotate(2deg);
+ }
+ .post-link {
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+ }
+ .post-title {
+    color: #33261D;
+    margin-bottom: 15px;
+    transition: .3s ease-in-out;
+ }
+ .post-item-wrap:hover .post-title {
+    color: #C9F2C7;
+ }
+ .post-content {
+    color: #A69888;
+    font-size: 14px;
+ }
+
+ .polaroid {
+     overflow:hidden;
+	width: 80%;
+	padding: 1% 1% 2% 1%;
+	border: 1px solid #BFBFBF;
+	background-color: white;
+	-webkit-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+	-moz-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+    box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+}
+.img_12{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow:hidden;
+
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+        
+.img_12:hover{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        }
+.polaroid2 {
+            overflow:hidden;
+           width: 40%;
+           padding: 1% 1% 2% 1%;
+           border: 1px solid #BFBFBF;
+           background-color: white;
+           -webkit-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+           -moz-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+           box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+       }       
+.img_212{
+    width:50%;
+}    
+.img_21{
+    background-color: rgba(179, 72, 58, 0.774);
+    display:flex;
+    justify-content: center;
+}    
+
+
